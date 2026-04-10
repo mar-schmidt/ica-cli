@@ -9,6 +9,14 @@ Entry point after install: `ica` (see `pyproject.toml` → `[project.scripts]`).
 
 ---
 
+## Public repo context
+
+- This project is unofficial and not affiliated with ICA.
+- For quickstart and repository overview, see `README.md`.
+- For reporting vulnerabilities, see `SECURITY.md`.
+
+---
+
 ## Global options
 
 | Option | Effect |
@@ -71,12 +79,18 @@ If `ICA_CLI_PIN` is unset but a valid saved OAuth access token exists in
 ## Install
 
 ```bash
+# GitHub install path (recommended currently)
+pip install "git+https://github.com/mar-schmidt/ica-cli.git"
+
+# Local clone install
 pip install .
 # Optional: Playwright-backed browser login for `ica login elevated`
 pip install ".[handla-browser]"
 # Playwright also needs browser binaries once:
 playwright install chromium
 ```
+
+PyPI publishing may be added later. Until then, use GitHub or local installs.
 
 ---
 

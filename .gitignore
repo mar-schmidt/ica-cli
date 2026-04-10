@@ -5,3 +5,13 @@ __pycache__/
 .pytest_cache/
 dist/
 build/
+.env
+.DS_Store
+.coverage
+coverage.xml
+
+# Local credential material. These files normally live outside the repo,
+# but ignore them defensively in case they are created in the workspace.
+auth_state.json
+handla_web.json
+username.txt
