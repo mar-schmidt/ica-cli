@@ -1,0 +1,40 @@
+{
+  "name": "ica-cli",
+  "version": "0.2.0",
+  "schemaVersion": "1",
+  "description": "Use this skill for the ICA CLI to manage Swedish shopping lists, recipes, and Handla cart workflows with JSON-first output. Trigger when the user asks about ICA shopping lists, recipes, Handla cart, product search, or ICA login/auth.\n",
+  "source": "https://raw.githubusercontent.com/mar-schmidt/ica-cli/master/.agent/SKILL.md",
+  "install": {
+    "pip": "pip install \"git+https://github.com/mar-schmidt/ica-cli.git\"",
+    "pip_browser": "pip install \"git+https://github.com/mar-schmidt/ica-cli.git#egg=ica-cli[handla-browser]\""
+  },
+  "entrypoint": "ica",
+  "commands": [
+    "login account",
+    "login elevated",
+    "logout",
+    "logout account",
+    "logout elevated",
+    "list ls",
+    "list show",
+    "list create",
+    "list add",
+    "list check",
+    "list uncheck",
+    "list remove",
+    "list delete",
+    "recipe get",
+    "recipe favorites",
+    "product search",
+    "cart show",
+    "cart keepalive",
+    "cart add",
+    "cart remove"
+  ],
+  "compatibility": [
+    "claude-desktop",
+    "cursor",
+    "continue",
+    "generic-mcp"
+  ]
+}
